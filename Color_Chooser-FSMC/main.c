@@ -181,5 +181,4 @@ int main(void) {
       else
           gdispFillCircle(ev.x, ev.y, pen, color);
     }
-  }
 }
