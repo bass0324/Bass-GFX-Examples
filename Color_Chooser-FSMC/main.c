@@ -82,9 +82,13 @@ static msg_t Thread1(void *arg) {
     systime_t time;
 
     time = 500;
-    palClearPad(GPIOD, GPIOD_LED6);
+    palClearPad(GPIOC, 7);
+	palClearPad(GPIOC, 8);
+	palClearPad(GPIOC, 9);
     chThdSleepMilliseconds(time);
-    palSetPad(GPIOD, GPIOD_LED6);
+    palSetPad(GPIOC, 7);
+	palSetPad(GPIOC, 8);
+	palSetPad(GPIOC, 9);
     chThdSleepMilliseconds(time);
   }
 }
