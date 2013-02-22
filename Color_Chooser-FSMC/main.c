@@ -78,8 +78,6 @@ GEventMouse             ev;
 static WORKING_AREA(waThread1, 128);
 static msg_t Thread1(void *arg) {
 
-  (void)arg;
-  chRegSetThreadName("blinker");
   while (TRUE) {
     systime_t time;
 
@@ -127,7 +125,6 @@ void drawScreen(void) {
 int main(void) {
     color_t color = Black;
     uint16_t pen = 0;
-    Thread *shelltp = NULL;
 
   /*
    * System initializations.
