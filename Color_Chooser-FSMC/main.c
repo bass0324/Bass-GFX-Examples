@@ -91,6 +91,7 @@ static msg_t Thread1(void *arg) {
 	palSetPad(GPIOC, 9);
     chThdSleepMilliseconds(time);
   }
+  return 1;
 }
 
 void drawScreen(void) {
