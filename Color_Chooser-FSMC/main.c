@@ -149,6 +149,8 @@ int main(void) {
    * Creates the blinker thread.
    */
   chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
+  
+  while (TRUE) {
 
     ginputGetMouseStatus(0, &ev);
     if (!(ev.current_buttons & GINPUT_MOUSE_BTN_LEFT))
@@ -181,4 +183,5 @@ int main(void) {
       else
           gdispFillCircle(ev.x, ev.y, pen, color);
     }
+  }
 }
