@@ -243,5 +243,4 @@ include $(GFXLIB)/drivers/ginput/touch/ADS7843/ginput_lld.mk
 BOARDFILE=board/stm32f4discovery.cfg
 
 include $(CHIBIOS)/os/ports/GCC/ARMCMx/rules.mk
-include $(CHIBIOS)/os/ports/GCC/ARMCMx/flash.mk
 
