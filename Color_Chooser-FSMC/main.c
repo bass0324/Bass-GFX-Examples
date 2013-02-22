@@ -79,7 +79,7 @@ static WORKING_AREA(waThread1, 128);
 static msg_t Thread1(void *arg) {
 
   while (TRUE) {
-    systime_t time;
+    int time;
 
     time = 500;
     palClearPad(GPIOC, 7);
