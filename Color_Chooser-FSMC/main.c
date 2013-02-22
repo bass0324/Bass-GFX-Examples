@@ -79,17 +79,14 @@ static WORKING_AREA(waThread1, 128);
 static msg_t Thread1(void *arg) {
 
   while (TRUE) {
-    int time;
-
-    time = 500;
     palClearPad(GPIOC, 7);
 	palClearPad(GPIOC, 8);
 	palClearPad(GPIOC, 9);
-    chThdSleepMilliseconds(time);
+    chThdSleepMilliseconds(500);
     palSetPad(GPIOC, 7);
 	palSetPad(GPIOC, 8);
 	palSetPad(GPIOC, 9);
-    chThdSleepMilliseconds(time);
+    chThdSleepMilliseconds(1000);
   }
   return 1;
 }
