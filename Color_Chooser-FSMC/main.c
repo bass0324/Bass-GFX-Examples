@@ -143,6 +143,10 @@ int main(void) {
     gdispSetOrientation(GDISP_ROTATE_90);
 
     drawScreen();
+	
+	palSetPadMode(GPIOC, 7, PAL_MODE_OUTPUT_PUSHPULL);
+	palSetPadMode(GPIOC, 8, PAL_MODE_OUTPUT_PUSHPULL);
+	palSetPadMode(GPIOC, 9, PAL_MODE_OUTPUT_PUSHPULL);
 
   /*
    * Creates the blinker thread.
